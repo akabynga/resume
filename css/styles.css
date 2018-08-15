@@ -1,0 +1,233 @@
+/* Colors */
+color-1 {
+    color: #E7BAA0;
+}
+
+.color-2 {
+    color: #E5DACE;
+}
+
+.color-3 {
+    color: #B2B2A2;
+}
+
+.color-4 {
+    color: #6D7973;
+}
+
+.color-5 {
+    color: #3F3931;
+}
+
+/* Fonts */
+/*font-family: 'Georgia', 'Rockwell', 'Open Sans', sans-serif;*/
+/*font-family: 'Cardo', serif;*/
+/*font-family: 'Contrail One', cursive;*/
+/*font-family: 'Sonsie One', cursive;*/
+/*font-family: 'Vampiro One', cursive;*/
+/*font-family: 'Caveat', cursive;*/
+
+/* Global styles */
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Open Sans', sans-serif;
+    color: #3F3931;
+}
+
+html {
+    box-sizing: border-box;
+}
+
+*, *:before, *:after {
+    box-sizing: inherit;
+}
+
+h1, h2 {
+    font-family: 'Caveat', cursive;
+    font-weight: 400;
+}
+
+h1 {
+    font-size: 80px;
+}
+
+h2 {
+    font-size: 40px;
+    margin-top: 0;
+}
+
+h3 {
+    margin: 0;
+}
+
+h3 ~ p {
+    margin: 0;
+}
+
+.uppercase {
+    text-transform: uppercase;
+}
+
+a {
+    color: red;
+}
+
+a:hover {
+    text-decoration: none;
+}
+
+ul.dashed {
+    list-style: none;
+}
+
+ul.dashed > li:before {
+    display: inline-block;
+    content: "-";
+    width: 1em;
+    margin-left: -1em;
+}
+
+.btn {
+    text-decoration: none;
+    color: white;
+    background: #EF233C;
+    padding: 10px;
+    display: inline-block;
+}
+
+.content-wrap {
+    max-width: 950px;
+    margin: 0 auto;
+    padding: 60px 50px;
+    overflow: auto;
+}
+
+/* Navigation */
+nav {
+    /*
+    background-color: #6D7973;
+    */
+    background-color: white;
+    margin-bottom: 5px;
+}
+
+.navigation {
+    text-align: center;
+    background: white;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 100;
+}
+
+.navigation a {
+    display: inline-block;
+    padding: 15px 20px;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-weight: 700;
+}
+
+/* Common Footer/Header styles */
+footer, header {
+    background-color: #2B2D42;
+    color: #8D99AE;
+}
+
+/* Header styles only */
+header {
+    padding-top: 50px;
+    position: relative;
+}
+
+header h1, header h2 {
+    color: #EDF2F4;
+    margin: 0;
+}
+
+.download {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+}
+
+.image-circle {
+    margin-top: 20px;
+    width: 260px;
+    height: 260px;
+    border-radius: 50%;
+    overflow: hidden;
+}
+
+.profile-img {
+    width: 260px;
+    top: -40px;
+    position: relative;
+}
+
+/* Footer styles only */
+footer {
+    text-align: center;
+}
+
+.contact-info a {
+    padding: 10px;
+    display: inline-block;
+}
+
+/* Work experience section */
+
+#experience {
+    background-color: white;
+}
+
+.job-description {
+    margin-bottom: 25px;
+}
+
+.job-description p:first-of-type {
+    margin-top: 0;
+}
+
+/* Work education section */
+#education {
+    background: linear-gradient(rgba(141, 153, 174, 0.8), rgba(141, 153, 174, 0.5)), url(../images/toronto.jpg) no-repeat fixed;
+    background-size: cover;
+}
+
+P + h3 {
+    margin-top: 30px;
+}
+
+/* Media Queries
+-------------------------*/
+@media (min-width: 900px) {
+    .column-wide {
+        width: 62%;
+        float: left;
+        min-width: 475px;
+    }
+
+    .column-narrow {
+        width: 35%;
+        float: left;
+        padding-right: 3%;
+    }
+}
+
+@media (max-width: 899px) {
+    header {
+        text-align: center;
+    }
+
+    .profile-img {
+        width: 200px;
+    }
+
+    .image-circle {
+        margin: 20px auto;
+        width: 200px;
+        height: 200px;
+    }
+}
